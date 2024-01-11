@@ -18,3 +18,9 @@ curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scrip
 #Install And Configure on Management
 
 curl -s https://api.github.com/repos/rancher/rke/releases/latest | grep download_url | grep amd64 | cut -d '"' -f 4 | wget -qi - && chmod +x rke_linux-amd64 && sudo mv rke_linux-amd64 /usr/local/bin/rke && rke --version
+
+# Configure cluster
+
+# rke config --name cluster.yml
+# export KUBECONFIG=/home/ubuntu/kube_config_cluster.yml
+# echo $KUBECONFIG
