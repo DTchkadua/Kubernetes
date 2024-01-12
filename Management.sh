@@ -22,5 +22,6 @@ curl -s https://api.github.com/repos/rancher/rke/releases/latest | grep download
 # Configure cluster
 
 # rke config --name cluster.yml
+# rke up
 # export KUBECONFIG=/home/ubuntu/kube_config_cluster.yml
 # echo $KUBECONFIG
